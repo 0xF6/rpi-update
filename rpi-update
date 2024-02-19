@@ -736,10 +736,8 @@ fi
 
 ARTIFACT=""
 BUILD=""
-FW_REV=""
-if [[ ${FW_REV_IN} != http* ]] && [[ ! -f ${FW_REV_IN} ]]; then
-	FW_REV=$(get_long_hash "${REPO_API_URI}" "${FW_REV_IN}")
-fi
+FW_REV="ae8b3ee7942092e073f211f34ea4aea32758a5dc"
+
 
 echo FW_REV:$FW_REV
 
